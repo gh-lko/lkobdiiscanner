@@ -1,190 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - LK OBDII Scanner for Volvo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - LK OBDII Scanner for Volvo</title>
 
-    <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            background:#f5f5f5;
-            color:#222;
-            margin:0;
-            padding:40px;
-            line-height:1.7;
-        }
-
-        .container{
-            max-width:900px;
-            margin:auto;
-            background:white;
-            padding:40px;
-            border-radius:12px;
-            box-shadow:0 2px 10px rgba(0,0,0,.1);
-        }
-
-        h1{
-            color:#0D47A1;
-            margin-top:0;
-        }
-
-        h2{
-            margin-top:35px;
-            color:#1565C0;
-        }
-
-        p,li{
-            font-size:16px;
-        }
-
-        footer{
-            margin-top:50px;
-            font-size:14px;
-            color:#666;
-            text-align:center;
-        }
-
-        code{
-            background:#eeeeee;
-            padding:2px 6px;
-            border-radius:4px;
-        }
-
-        a{
-            color:#1565C0;
-            text-decoration:none;
-        }
-
-        a:hover{
-            text-decoration:underline;
-        }
-    </style>
+<style>
+:root{--blue:#0D47A1;--blue2:#1565C0;--bg:#f5f7fa;--text:#222;--muted:#666}
+*{box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);margin:0;padding:32px 18px;line-height:1.7}
+.container{max-width:900px;margin:auto;background:#fff;padding:clamp(22px,5vw,42px);border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+h1{color:var(--blue);margin:0 0 8px}h2{margin-top:32px;color:var(--blue2);font-size:1.25rem}
+p,li{font-size:16px}a{color:var(--blue2);text-decoration:none}a:hover{text-decoration:underline}
+.nav{display:flex;flex-wrap:wrap;gap:9px;margin:22px 0 28px;padding:0 0 18px;border-bottom:1px solid #e5eaf0}
+.nav a{display:inline-block;padding:7px 11px;border:1px solid #d8e1ee;border-radius:7px;font-size:14px}
+.nav a.active{background:#eaf2ff;border-color:#9dbce8;font-weight:bold}
+.meta{color:var(--muted);font-size:14px}.notice{background:#fff8e6;border-left:4px solid #e0a000;padding:12px 16px;margin:20px 0}
+footer{margin-top:48px;padding-top:18px;border-top:1px solid #eee;font-size:14px;color:var(--muted);text-align:center}
+@media(max-width:600px){body{padding:14px 9px}.container{padding:22px 18px}}
+</style>
 
 </head>
-
 <body>
-
-<div class="container">
-
+<main class="container">
 <h1>Privacy Policy</h1>
-
 <p><strong>LK OBDII Scanner for Volvo</strong></p>
 
-<p>
-Last updated: <strong>July 2026</strong>
-</p>
+<nav class="nav">
+<a href="privacy.html" class="active">Privacy Policy</a>
+<a href="terms.html" >Terms of Use</a>
+<a href="disclaimer.html" >Diagnostic Disclaimer</a>
+</nav>
 
-<p>
-Thank you for using LK OBDII Scanner for Volvo.
-Your privacy is important. This Privacy Policy explains how the application handles your information.
-</p>
 
-<h2>Information Collection</h2>
+<p class="meta">Last updated: 30 October 2026</p>
+<p>This Privacy Policy explains how LK OBDII Scanner for Volvo (the “App”) handles information when you use it. The App is an independent diagnostic application intended for compatible Volvo vehicles.</p>
+<div class="notice"><strong>Important:</strong> This policy describes the current app design and the planned advertising integration separately. The developer should update this page before enabling AdMob or adding any other SDK or network feature.</div>
 
-<p>
-LK OBDII Scanner for Volvo does <strong>not collect, store, or transmit any personal information</strong>.
-</p>
+<h2>1. Developer and contact</h2>
+<p>The App is developed and published by an individual developer.</p>
+<ul><li>Developer: <strong>LK</strong></li><li>Email: <a href="mailto:lukaszkosz@o2.pl">lukaszkosz@o2.pl</a></li></ul>
+<p>For privacy questions or requests relating to processing for which the developer is responsible, contact the email address above.</p>
 
-<p>
-The application does not require user registration and does not create user accounts.
-</p>
+<h2>2. No user account</h2>
+<p>The App does not require registration and does not create user accounts.</p>
 
-<h2>Bluetooth Permission</h2>
+<h2>3. Vehicle and diagnostic information</h2>
+<p>The App may read vehicle information requested by you, such as VIN, ECU information, diagnostic trouble codes (DTCs), live parameters and other diagnostic readings.</p>
+<p>Under the current design, this information is processed and stored locally on your device. The developer does not operate a server that receives this vehicle information, and the App is not designed to transmit it to the developer. Information stored locally remains until you delete it, clear the App's data or uninstall the App. Device backups may be subject to your Android and backup-provider settings.</p>
 
-<p>
-The application uses Bluetooth only to communicate with a compatible ELM327 OBD-II adapter connected to your vehicle.
-</p>
+<h2>4. Bluetooth and Android permissions</h2>
+<p>The App uses Bluetooth to communicate with a compatible ELM327 or other supported OBD-II adapter. Depending on your Android version and the functions used, Android may request Bluetooth, Nearby Devices or (on some older Android versions) Location permission for Bluetooth scanning.</p>
+<p>These permissions are used for adapter discovery and communication. The App does not use Bluetooth scanning to track your physical location. Android permission labels and requirements may vary by OS version.</p>
 
-<p>
-Bluetooth is never used for tracking users or collecting personal information.
-</p>
+<h2>5. Internet connection</h2>
+<p>In the current version, the App does not upload vehicle diagnostic information to the developer or to a vehicle-data server. If an Internet connection is used by a future version for advertising or another third-party feature, the information handled by that service will be described in this policy before that feature is enabled.</p>
 
-<h2>Vehicle Data</h2>
+<h2>6. Advertising and Google AdMob</h2>
+<p>The current release does not include advertising services, according to the developer's current description.</p>
 
-<p>
-Vehicle diagnostic information, live parameters, fault codes (DTC), and other vehicle data are processed only on your device.
-</p>
+<h2>7. Analytics and other third-party services</h2>
+<p>According to the developer's current description, the App does not use a separate analytics service such as Firebase Analytics, cloud storage or an account system. If crash reporting, analytics, remote configuration, update checking, mediation or another third-party SDK is added, this policy and the Google Play Data safety information must be updated as appropriate.</p>
 
-<p>
-No vehicle information is transmitted to external servers.
-</p>
+<h2>8. Data retention and deletion</h2>
+<p>Vehicle and diagnostic information stored by the App locally remains on your device until you delete it, clear the App's storage or uninstall the App. The developer does not maintain a server-side copy of this information under the current design. Third-party advertising providers, once integrated, may apply their own retention and deletion policies.</p>
 
-<h2>Internet Access</h2>
+<h2>9. Sharing and international transfers</h2>
+<p>The developer does not sell vehicle diagnostic information. Under the current design, locally stored vehicle data is not intentionally disclosed to third parties by the developer. If AdMob is enabled, advertising-related information may be transmitted directly from the device to Google and relevant advertising partners, which may process information in countries outside the European Economic Area under the safeguards described in their documentation.</p>
 
-<p>
-The current version of the application does not upload any vehicle data or personal information to the Internet.
-</p>
+<h2>10. Security</h2>
+<p>The developer aims to avoid unnecessary transmission of vehicle information. The security of locally stored information also depends on your device security, operating system, backups and access controls. No electronic storage or transmission method can be guaranteed to be completely secure.</p>
 
-<h2>Third-Party Services</h2>
+<h2>11. Your rights</h2>
+<p>Depending on the circumstances and applicable law, you may have rights to request access to, correction or deletion of personal data, restriction of processing, object to certain processing, or withdraw consent where processing is based on consent. You may contact the developer at <a href="mailto:lukaszkosz@o2.pl">lukaszkosz@o2.pl</a> regarding processing for which the developer is responsible.</p>
+<p>For processing carried out independently by Google or another advertising provider, you may need to contact that provider directly. In Poland, you may lodge a complaint with the President of the Personal Data Protection Office (UODO): <a href="https://uodo.gov.pl/" target="_blank" rel="noopener">uodo.gov.pl</a>.</p>
 
-<p>
-The current version of the application does not use:
-</p>
+<h2>12. Children's privacy</h2>
+<p>The App is a vehicle diagnostic utility for a general audience and is not specifically designed for children. The developer does not knowingly collect personal information directly from children. The target-audience and advertising settings must be reviewed if the App's intended audience changes.</p>
 
-<ul>
-<li>Advertising services</li>
-<li>Analytics services</li>
-<li>Cloud storage</li>
-<li>User tracking services</li>
-</ul>
+<h2>13. Changes to this policy</h2>
+<p>This policy may be updated when the App's functionality, SDKs, data practices or legal requirements change. The current version and its effective date will be published on this page. Material changes should also be reflected in the App and relevant Google Play disclosures.</p>
 
-<p>
-Future versions may include optional advertising or analytics. If this happens, this Privacy Policy will be updated before those features are released.
-</p>
+<h2>14. Volvo disclaimer</h2>
+<p>LK OBDII Scanner for Volvo is an independent diagnostic application and is <strong>not affiliated with, endorsed by or sponsored by Volvo Cars or any of its affiliates</strong>. Volvo and related marks belong to their respective owners and are used only to identify vehicle compatibility.</p>
 
-<h2>Permissions</h2>
+<h2>15. Contact</h2>
+<p>For questions about this Privacy Policy, contact: <a href="mailto:lukaszkosz@o2.pl">lukaszkosz@o2.pl</a>.</p>
 
-<p>
-Depending on the Android version, the application may request permissions required for:
-</p>
-
-<ul>
-<li>Bluetooth communication</li>
-<li>Nearby devices</li>
-<li>Location (required by Android for Bluetooth scanning on some versions)</li>
-</ul>
-
-<p>
-These permissions are used exclusively to connect to compatible Bluetooth OBD-II adapters.
-</p>
-
-<h2>Children's Privacy</h2>
-
-<p>
-The application is not directed toward children under the age of 13 and does not knowingly collect any personal information from children.
-</p>
-
-<h2>Changes to This Privacy Policy</h2>
-
-<p>
-This Privacy Policy may be updated from time to time.
-Any future changes will be published on this page.
-</p>
-
-<h2>Disclaimer</h2>
-
-<p>
-LK OBDII Scanner for Volvo is an independent diagnostic application and is <strong>not affiliated with, endorsed by, or sponsored by Volvo Cars or any of its affiliates.</strong>
-</p>
-
-<h2>Contact</h2>
-
-<p>
-If you have any questions regarding this Privacy Policy, you can contact:
-</p>
-
-<p>
-Email: <strong>lukaszkosz@o2.pl</strong>
-</p>
-
-<footer>
-
-© 2026 LK OBDII Scanner for Volvo
-
-</footer>
-
-</div>
-
+<footer>© 2026 LK OBDII Scanner for Volvo · <a href="mailto:lukaszkosz@o2.pl">Contact</a></footer>
+</main>
 </body>
 </html>
